@@ -24,14 +24,20 @@ spring-ai官方提供了一个demo
 在ai-openai-helloworld基础上进行了一些修改，完善可一些配置文件，增加了代理的配置。国内可以通过配置代理访问openAI。
 实现了3个demo
 1、简单回话（全部生成完毕返回）
+```
 curl --location 'http://localhost:8080/ai/simple?message=Tell me a joke'
+```
 返回完整的生成回话
 ![image.png](https://cdn.nlark.com/yuque/0/2024/png/23165007/1713079698050-4f1412cf-cb02-44eb-b3a0-ca864d09913b.png#averageHue=%23fbfbfb&clientId=ua1cef76a-d5af-4&from=paste&height=288&id=xlI7v&originHeight=432&originWidth=1381&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=54946&status=done&style=none&taskId=uc7226160-aab6-408a-8993-e77f7695ecd&title=&width=920.6666666666666)
 2、流式回话
+```
 curl --location 'http://localhost:8080/ai/stream?message=Tell me a joke'
+```
 ![image.png](https://cdn.nlark.com/yuque/0/2024/png/23165007/1713080082882-5f92c5aa-9d61-4bac-a029-339a62fbd8a1.png#averageHue=%23fdfdfd&clientId=ua1cef76a-d5af-4&from=paste&height=758&id=tkhor&originHeight=1137&originWidth=1921&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=113381&status=done&style=none&taskId=u893ca74d-09ce-4112-a832-ab9f87fb1bc&title=&width=1280.6666666666667)
 3、消息的模板提示和对gpt相应的结果自动映射到java类
+```
 curl --location 'http://localhost:8080/ai/template?author=李白'
+```
 例如这个例子中我们像gpt提问请列出关于**李白**相关的诗词题目，spring-ai可以自动帮我们解析成java对象
 ![image.png](https://cdn.nlark.com/yuque/0/2024/png/23165007/1713080211141-0946cf32-83e2-49af-8382-52e348a1fefc.png#averageHue=%23fdfdfd&clientId=ua1cef76a-d5af-4&from=paste&height=684&id=F768L&originHeight=1026&originWidth=1372&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=115913&status=done&style=none&taskId=ud2dd4573-dd49-440d-8945-b95e783f70d&title=&width=914.6666666666666)
 # 启动项目
