@@ -1,4 +1,4 @@
-package org.springframework.ai.openai.samples.helloworld;
+package org.springframework.ai.openai.samples.helloworld.openapi;
 
 import org.springframework.ai.autoconfigure.openai.*;
 import org.springframework.ai.autoconfigure.retry.SpringAiRetryAutoConfiguration;
@@ -10,10 +10,8 @@ import org.springframework.ai.openai.OpenAiEmbeddingClient;
 import org.springframework.ai.openai.OpenAiImageClient;
 import org.springframework.ai.openai.api.OpenAiAudioApi;
 import org.springframework.ai.openai.api.OpenAiImageApi;
-import org.springframework.ai.openai.samples.helloworld.config.ProxyConfig;
-import org.springframework.ai.openai.samples.helloworld.openapi.MyOpenAiApi;
+import org.springframework.ai.openai.samples.helloworld.openapi.config.ProxyConfig;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.web.client.RestClientAutoConfiguration;

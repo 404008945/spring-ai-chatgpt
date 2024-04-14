@@ -1,4 +1,4 @@
-package org.springframework.ai.openai.samples.helloworld.config;
+package org.springframework.ai.openai.samples.helloworld.openapi.config;
 
 
 import org.springframework.boot.context.properties.ConfigurationProperties;

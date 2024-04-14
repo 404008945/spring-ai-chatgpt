@@ -1,14 +1,8 @@
 package org.springframework.ai.openai.samples.helloworld.openapi;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonInclude.Include;
-
 import java.net.InetSocketAddress;
 import java.net.Proxy;
-import java.net.SocketAddress;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.function.Predicate;
 
@@ -18,13 +12,11 @@ import org.springframework.ai.model.ModelOptionsUtils;
 import org.springframework.ai.openai.api.ApiUtils;
 import org.springframework.ai.openai.api.OpenAiApi;
 import org.springframework.ai.openai.api.OpenAiStreamFunctionCallingHelper;
-import org.springframework.ai.openai.samples.helloworld.config.ProxyConfig;
-import org.springframework.ai.openai.samples.helloworld.requestfactory.MyClientHttpRequestFactory;
+import org.springframework.ai.openai.samples.helloworld.openapi.config.ProxyConfig;
+import org.springframework.ai.openai.samples.helloworld.openapi.requestfactory.MyClientHttpRequestFactory;
 import org.springframework.ai.retry.RetryUtils;
-import org.springframework.boot.context.properties.bind.ConstructorBinding;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.http.client.reactive.ClientHttpConnector;
 import org.springframework.http.client.reactive.ReactorClientHttpConnector;
 import org.springframework.util.Assert;

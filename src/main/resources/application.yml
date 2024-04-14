@@ -5,7 +5,7 @@ spring:
       port: 1080
     openai:
       api-key: xxxx
-    #  base-url: https://one.aiskt.com
+#      base-url: https://one.aiskt.com
       chat:
         options:
           model: gpt-3.5-turbo
