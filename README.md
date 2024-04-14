@@ -11,7 +11,7 @@ Spring AI API 涵盖了广泛的功能。 每个主要功能都在其单独的�
 - AI 模型和矢量存储的 Spring Boot 自动配置和启动器。
 - 用于数据工程的 ETL 框架。这为将数据加载到向量数据库提供了基础，有助于实现检索增强生成模式，使您能够将数据引入 AI 模型以合并到其响应中。
 
-** 总结来说。通过spring-ai的提供的api功能，可以方便的实现大模型相关的相关功能。例如对话，提示，文生图等功能。**
+**总结来说。通过spring-ai的提供的api功能，可以方便的实现大模型相关的相关功能。例如对话，提示，文生图等功能。**
 
 ![image.png](https://cdn.nlark.com/yuque/0/2024/png/23165007/1713066556770-3a15e9c9-a85f-4eed-9e01-73a03c4373b2.png#averageHue=%231e2328&clientId=ua1cef76a-d5af-4&from=paste&height=390&id=v6UvU&originHeight=585&originWidth=427&originalType=binary&ratio=1.5&rotation=0&showTitle=false&size=36254&status=done&style=none&taskId=ueb5cc8f9-f0bf-45b7-8130-08ac794ff22&title=&width=284.6666666666667)
 # 接入chatGpt
