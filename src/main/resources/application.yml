@@ -1,6 +1,6 @@
 spring:
   ai:
-    proxy:
+    proxy: # 需要改为自己的代理
       host: 127.0.0.1
       port: 1080
     openai:
