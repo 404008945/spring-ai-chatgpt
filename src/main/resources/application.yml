@@ -8,5 +8,6 @@ spring:
 #      base-url: https://one.aiskt.com 这是国内的一个网站，注册送1美元的额度，可以用来测试，开启这个选项可以注释掉代理的配置
       chat:
         options:
+          temperature: 0.7 #  生成结果多样性参数，值在0~2之间，值越大越随机越小越固定，但就算为0也会有随机性
           model: gpt-3.5-turbo
 
