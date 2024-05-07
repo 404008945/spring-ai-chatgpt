@@ -88,7 +88,8 @@ public class MyOpenAiApi extends OpenAiApi {
             }
 
             return chunk;
-        }).windowUntil((chunk) -> {
+        }).filter((chunk)->!CollectionUtils.isEmpty(chunk.choices())
+        ).windowUntil((chunk) -> {
             if (isInsideTool.get() && this.chunkMerger.isStreamingToolFunctionCallFinish(chunk)) {
                 isInsideTool.set(false);
                 return true;
