@@ -67,6 +67,10 @@ public class SimpleAiController {
             System.out.println("流式对话发生异常");
             emitter.completeWithError(e);
         });
+        stream.doOnCancel(()->{
+            System.out.println("流式对话取消");
+            emitter.complete();
+        });
 
         stream.doOnComplete(emitter::complete);
         return emitter;
