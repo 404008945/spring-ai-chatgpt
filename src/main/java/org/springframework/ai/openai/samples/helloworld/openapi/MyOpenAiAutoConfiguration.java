@@ -33,7 +33,6 @@ import java.util.List;
 @AutoConfiguration(
         after = {RestClientAutoConfiguration.class, SpringAiRetryAutoConfiguration.class}
 )
-@Primary
 @EnableConfigurationProperties({OpenAiConnectionProperties.class, OpenAiChatProperties.class, OpenAiEmbeddingProperties.class, OpenAiImageProperties.class, OpenAiAudioTranscriptionProperties.class})
 public class MyOpenAiAutoConfiguration {
     public MyOpenAiAutoConfiguration() {
